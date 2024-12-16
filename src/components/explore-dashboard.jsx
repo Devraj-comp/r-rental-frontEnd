@@ -96,7 +96,8 @@ export const ExploreDashboard = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/services/', {
+        // fetch('http://127.0.0.1:8000/api/services/', {
+            fetch('https://r-rental-backend.onrender.com/api/services/', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -124,7 +125,8 @@ export const ExploreDashboard = () => {
         }
         try {
             const response = await fetch(
-              `http://localhost:8000/api/available-cars/?start_date=${startDate}&end_date=${endDate}`
+            //   `http://localhost:8000/api/available-cars/?start_date=${startDate}&end_date=${endDate}`
+            `https://r-rental-backend.onrender.com/api/available-cars/?start_date=${startDate}&end_date=${endDate}`
             );
             if (!response.ok) {
               throw new Error("Failed to fetch available vehicles.");

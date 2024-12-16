@@ -48,7 +48,8 @@ export const SignUpPop = ({onClose, toggleLogin}) => {
             role: role
         };
         try{
-            const response = await fetch('http://127.0.0.1:8000/user/create-user/', {
+            // const response = await fetch('http://127.0.0.1:8000/user/create-user/', {
+                const response = await fetch('https://r-rental-backend.onrender.com/user/create-user/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

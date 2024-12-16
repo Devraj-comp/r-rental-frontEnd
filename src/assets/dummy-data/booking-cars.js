@@ -203,7 +203,8 @@ const bookingCars = async () => {
   const token = localStorage.getItem("access_token");
   const role = localStorage.getItem("role");
   
-  const fetch_detail_url = role === 'admin' ? "http://localhost:8000/api/bookings/detail": "http://localhost:8000/api/bookings/"
+  // const fetch_detail_url = role === 'admin' ? "http://localhost:8000/api/bookings/detail": "http://localhost:8000/api/bookings/"
+  const fetch_detail_url = role === 'admin' ? "https://r-rental-backend.onrender.com/api/bookings/detail": "https://r-rental-backend.onrender.com/api/bookings/"
   try {
     const response = await fetch(fetch_detail_url, {
       method: 'GET',

@@ -14,8 +14,10 @@ const ServiceOrdersTable = () => {
         const fetchOrders = async () => {
             const fetchDetailUrl =
                 role === "admin"
-                    ? "http://127.0.0.1:8000/api/serviceBookings/detail"
-                    : "http://127.0.0.1:8000/api/serviceBookings/";
+                    // ? "http://127.0.0.1:8000/api/serviceBookings/detail"
+                    // : "http://127.0.0.1:8000/api/serviceBookings/";
+                    ? "https://r-rental-backend.onrender.com/api/serviceBookings/detail"
+                    : "https://r-rental-backend.onrender.com/api/serviceBookings/";
 
             try {
                 const response = await fetch(fetchDetailUrl, {
@@ -58,7 +60,8 @@ const ServiceOrdersTable = () => {
     const handleUpdateOrderStatus = async (orderId, newStatus) => {
         try {
             const response = await fetch(
-                `http://localhost:8000/api/bookings/${orderId}/updatestatus/`,
+                // `http://localhost:8000/api/bookings/${orderId}/updatestatus/`,
+                `https://r-rental-backend.onrender.com/api/bookings/${orderId}/updatestatus/`,
                 {
                     method: "PATCH",
                     headers: {

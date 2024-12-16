@@ -144,7 +144,8 @@ export const ExploreCars = () => {
           return;
         }
         try{
-          const response = await fetch("http://localhost:8000/api/bookings/create/",{
+        //   const response = await fetch("http://localhost:8000/api/bookings/create/",{
+            const response = await fetch("https://r-rental-backend.onrender.com/api/bookings/create/",{
             method: 'POST',
             headers: {
               "Authorization": `JWT ${token}`,

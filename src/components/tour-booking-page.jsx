@@ -48,7 +48,8 @@ export const TourBookingPage = () => {
         }
 
         try {
-            const response = await fetch("http://localhost:8000/api/tourBookings/create/", {
+            // const response = await fetch("http://localhost:8000/api/tourBookings/create/", {
+                const response = await fetch("https://r-rental-backend.onrender.com/api/tourBookings/create/", {
                 method: 'POST',
                 headers: {
                     "Authorization": `JWT ${token}`,

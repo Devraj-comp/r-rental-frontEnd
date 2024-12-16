@@ -14,8 +14,10 @@ const UsersTable = () => {
         const fetchOrders = async () => {
             const fetchDetailUrl =
                 role === "admin"
-                    ? "http://localhost:8000/user/list-user/"
-                    : "http://localhost:8000/user/current/";
+                    // ? "http://localhost:8000/user/list-user/"
+                    // : "http://localhost:8000/user/current/";
+                    ? "https://r-rental-backend.onrender.com/user/list-user/"
+                    : "https://r-rental-backend.onrender.com/user/current/";
 
             try {
                 const response = await fetch(fetchDetailUrl, {

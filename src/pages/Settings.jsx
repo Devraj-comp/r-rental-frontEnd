@@ -24,24 +24,24 @@ const Settings = () => {
             <div className="form__group">
               <div>
                 <label>Live in</label>
-                <input type="text" placeholder="Sylhet, Bangladesh" />
+                <input type="text" placeholder="Kathmandu, Nepal" />
               </div>
 
               <div>
                 <label>Street</label>
-                <input type="text" placeholder="SYL 3108" />
+                <input type="text" placeholder="Kathmandu" />
               </div>
             </div>
 
             <div className="form__group">
               <div>
                 <label>Email</label>
-                <input type="email" placeholder="example@gmail.com" />
+                <input type="email" placeholder="user@gmail.com" />
               </div>
 
               <div>
                 <label>Phone Number</label>
-                <input type="number" placeholder="+880 17*******" />
+                <input type="number" placeholder="+977-9746338444" />
               </div>
             </div>
 
